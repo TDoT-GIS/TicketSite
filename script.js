@@ -1,3 +1,4 @@
+
 let project_val, jj_val, first, last, user_class, email;
 
 function updateCollectorText(){
@@ -11,6 +12,7 @@ function updateCollectorText(){
 function updateTrimsText(){
   let first = document.querySelector('input[name="firstname"]').value;
   let last = document.querySelector('input[name="lastname"]').value;
+  let user_class = document.getElementById('userClass').value;
   document.getElementById('trimsText').value = 
   "I am requesting a TRIMS account be created for "+first+" "+last+". Their user class should be "+user_class+"."; 
 }

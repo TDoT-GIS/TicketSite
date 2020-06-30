@@ -17,6 +17,13 @@
         body {
             margin: 30px;
         }
+        #nav kbd {
+            background-color: #142970;
+            color: white;
+            font-size: 50px;
+            padding-left: 150px;
+            text-align: center;
+        }
         #arcpro kbd {
             background-color: #0066ff;
             color: white;
@@ -40,7 +47,15 @@
 </head>
 
 <body>
-  <img src="./images/tdot.png" alt="TDOT Logo" width="150" style="padding-bottom: 20px;">
+  <nav id="nav" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./images/tdot.png" alt="TDOT Logo" width="150" style="padding-bottom: 20px;">
+      <kbd>GIS Software Reference</kbd>
+    </a>
+  </nav>
+
+  
+
     <div class="row">
         <div class="col-4">
           <div class="list-group" id="list-tab" role="tablist">
@@ -54,41 +69,22 @@
           <div class="tab-content" id="nav-tabContent">
             <!--ArcGIS Pro-->
             <div class="tab-pane fade show active" id="arcpro" role="tabpanel" aria-labelledby="list-arcpro-list">
-                <p>To request <kbd>ArcGIS Pro</kbd> be installed on your computer click <a href="helpdeskticket.com">here</a> to put in a Helpdesk ticket. Copy the sample text below and include it in the additional comments field of the ticket.</p>
-                <h2>Sample Ticket Text</h2>
-                <div class="md-form mb-4 pink-textarea active-pink-textarea-2">
-                <textarea id="arcproText" class="md-textarea form-control" rows="4" cols="40">I am requesting ArcGIS Pro be installed on my machine.</textarea>
-                </div>
-                <button class="btn btn-outline-info" onclick="copyText('arcproText')">Copy</button>
+                <p><kbd>ArcGIS Pro</kbd> can be installed on request starting July 1, 2020.</p>
             </div>
             <!--Collector & Survey123-->
             <div class="tab-pane fade" id="collector" role="tabpanel" aria-labelledby="list-collector-list">
                 <p><kbd>Collector and Survey123</kbd> are only assigned in relation to a specific project or solution. It is best to have a project supervisor/approver put in the ticket on your behalf.</p>
                 <h3>Project/Solution</h3>
-                <div id="projects">
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="geohazards" name="projects" value="GeoHazards" onChange="updateCollectorText();">
-                  <label class="custom-control-label" for="geohazards" >GeoHazards</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="nightglow" name="projects" value="Nightglow" onChange="updateCollectorText();">
-                  <label class="custom-control-label" for="nightglow">Nightglow</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="hpms" name="projects" value="HPMS" onChange="updateCollectorText();">
-                  <label class="custom-control-label" for=hpms>HPMS</label>
-                </div>
-                <input class="form-control" type="text" name="jj" placeholder="Enter JJ# of user who needs software." onChange="updateCollectorText();">
-                <h3>Sample Ticket Text</h3>
-                <div class="md-form mb-4 pink-textarea active-pink-textarea-2">
-                  <textarea id="textArea" class="md-textarea form-control" rows="4" cols="40"></textarea>
-                  </div>
-                  <button class="btn btn-outline-info" onclick="copyText('textArea')">Copy</button>
-                </div>
-            </div>
+                <ul class="list-group">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Morbi leo risus</li>
+                  <li class="list-group-item">Porta ac consectetur ac</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
             <!--TRIMS-->
             <div class="tab-pane fade" id="trims" role="tabpanel" aria-labelledby="list-trims-list">
-                <p>It is best for a supervisor to request access to <kbd>TRIMS</kbd> for their team members. This allows us to insure that the user is getting the correct access level for their role. For access, click <a href="helpdeskticket.com">here</a> to put in a Helpdesk ticket with the necessary information.</p>
+                <p>For access to <kbd>TRIMS,</kbd> click <a href="helpdeskticket.com">here</a> to put in a Helpdesk ticket. Include the following information:</p>
                 
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
